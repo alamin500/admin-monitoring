@@ -87,3 +87,53 @@ height: 282px;
  height: 220px;
     width: 286px;
 }
+
+/* Number of MTOs  */
+.number0f-mtos{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: rgba(255, 165, 0, 0.25);
+ border-radius: 15px;
+
+}
+.numnerof-text p{
+margin: 0;
+white-space: pre;
+line-height: 20px;
+
+}
+.most-recent{
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+margin: 20px 0;
+}
+.most-recent img{
+  width: 22px;
+  height: 11px;
+}
+/* compliance Extranctiob  */
+.compliance-extract{
+  display: flex;
+  align-items: center;
+}
+.compliance-extract p{
+margin: 0;
+}
+.recent-jobs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.recent-jobs img{
+ background: rgba(82, 93, 237, 0.25);
+ padding: 10px;
+ border-radius: 10px;
+ margin: 10px;
+
+}
+.price-progress p{
+  margin: 0;
+}
