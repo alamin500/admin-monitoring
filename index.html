@@ -38,6 +38,9 @@
           <div class="col-lg-4 col-md-4">
             Column
             <h1>This second Column</h1>
+            <div>
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            </div>
           </div>
         </div>
       </section>
@@ -69,5 +72,26 @@
         },
       });
     </script>
+
+    <!-- -----------------In Progress Chart ------------------ -->
+    <script>
+var xValues = [0,1,2,3,4,5,6,7,8,9,10];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      data: [040,020,045,025,070,045, 065, 100, 070, 50, 90],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+</script>
+
   </body>
 </html>
