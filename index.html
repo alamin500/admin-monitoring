@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
-</head>
-<body>
-  <h1>This is me</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style  -->
+   <link rel="stylesheet" href="styles/style.css">
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <!-- Chart Script Link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="container">
+        <h1>Admin Monitoring</h1>
+        <p>Monitoring all jobs</p>
+        <div class="row">
+          <div class="col-lg-8 col-md-4">
+            <div class="row">
+              <!-- Activity Report  -->
+              <div class="col">
+                <h3>Activity Raport</h3>
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+              </div>
+              <!-- Total Job post -->
+              <div class="col">
+                <h1>Total job post</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            Column
+            <h1>This second Column</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-------------------- Activity Report Chart ------------------ -->
+    <script>
+      var xValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+      var yValues = [55, 49, 44, 24, 35, 12, 45, 23, 60, 14, 33, 15, 56, 23];
+      var barColors = ['red', 'green', 'blue', 'orange', 'brown','red', 'green', 'blue', 'orange', 'brown','red', 'green', 'blue', 'orange'];
+
+      new Chart('myChart', {
+        type: 'bar',
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'World Wine Production 2018',
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
