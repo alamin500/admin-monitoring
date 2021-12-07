@@ -102,14 +102,12 @@ content: url(../images/Admin-monitoring/tced.png);
     margin: 0 auto;
 }
 
-.total-text{
-     line-height: 20px;
-}
 .total-text p{
     font-style: normal;
 font-weight: bold;
 font-size: 12px;
 line-height: 16px;
+margin: 0;
 }
 .content-right {
   width: 339px;
@@ -137,7 +135,7 @@ height: 282px;
 .number0f-mtos{
  display: flex;
  align-items: center;
- justify-content: center;
+justify-content: flex-start;
  background: rgba(255, 165, 0, 0.25);
  border-radius: 15px;
     margin-top: 15px;
@@ -149,9 +147,6 @@ height: 282px;
     border-radius: 15px;
     padding: 12px 8px 12px 17px;
     margin: 10px;
-}
-.numnerof-text{
-    margin-top: 15px;
 }
 .numnerof-text p{
 margin: 0;
