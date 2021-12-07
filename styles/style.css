@@ -125,6 +125,24 @@ font-weight: bold;
 font-size: 12px;
 line-height: 16px;
 margin: 0;
+white-space: pre;
+}
+.total-text-mtos p{
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+margin: 0;
+white-space: pre;
+margin: 0;
+}
+.total-text-mtos h6{
+    font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+margin: 0;
+color: #525DED;
 }
 .total-text h6{
     font-style: normal;
