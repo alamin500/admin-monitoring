@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Font Family  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
     <!-- style  -->
     <link rel="stylesheet" href="styles/style.css" />
     <!-- bootstrap -->
@@ -22,59 +25,155 @@
   <body>
     <header></header>
     <main class="page-container">
-      <nav class="nav sidebar">
-        <li>Dashboard</li>
-        <li>Jobs</li>
-      </nav>
+      <div>
+        <img
+          height="52px"
+          width="64px"
+          class="m-4"
+          src="./images/Side-Bar/varal-logo.png"
+          alt=""
+        />
+        <nav class="nav sidebar">
+          <ul>
+            <li><img src="./images/Side-Bar/house.png" alt="" /> Dashboard</li>
+            <li><img src="./images/Side-Bar/jobs.png" alt="" /> Jobs</li>
+            <li>
+              <img src="./images/Side-Bar/mto-bank.png" alt="" /> MTO Bank
+            </li>
+            <li>
+              <img src="./images/Side-Bar/monitoring.png" alt="" /> Monitoring
+            </li>
+            <li><img src="./images/Side-Bar/setting.png" alt="" /> Setting</li>
+          </ul>
+        </nav>
+      </div>
       <section class="admin-page-wrapper">
-        <header>Header</header>
-        <div class="title">
+        <header>
+          <div>
+            <div
+              class="
+                d-flex
+                align-items-center
+                justify-content-between
+                header-img
+              "
+            >
+              <img
+                width="30px"
+                height="26px"
+                src="./images/Admin-monitoring/slide-bar.png"
+                alt=""
+              />
+              <h1>MTO</h1>
+              <input type="text" placeholder="Search" />
+              <img
+                height="22px"
+                width="22px"
+                src="./images/Admin-monitoring/man.png"
+                alt=""
+              />
+              <p>Dhanashree</p>
+              <img
+                height="12px"
+                width="19px"
+                src="./images/Admin-monitoring/arrow-key.png"
+                alt=""
+              />
+              <img
+                height="30px"
+                width="26px"
+                src="./images/Admin-monitoring/bell.png"
+                alt=""
+              />
+              <img
+                height="24px"
+                width="24px"
+                src="./images/Admin-monitoring/plus.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </header>
+        <div class="admin-title">
           <h1>Admin Monitoring</h1>
-          <p>Monitoring all jobs</p>
+
+          <p><span>Admin</span></p>
+          <p>
+            <img
+              src="./images/Admin-monitoring/monitoring-all-job.png"
+              alt=""
+            />
+            Monitoring all jobs
+          </p>
         </div>
         <div class="admin-main-content-wrapper">
           <div class="content">
             <div class="activity-report-wrapper">
               <!-- Activity Report  -->
               <div class="activity-report">
-                <h3>Activity Raport</h3>
+                <div class="d-flex justify-content-between">
+                  <div class="activity-text">
+                    <h3>Activity Report</h3>
+                    <p><span>29 July 2021 | Today</span></p>
+                  </div>
+                  <div class="total-text">
+                    <p>
+                      Total Completed Jobs
+                      <img
+                        src="./images/Admin-monitoring/activity-report.png"
+                        alt=""
+                      />
+                    </p>
+                    <h6>33.0</h6>
+                    <p><span>11+ | Today</span></p>
+                  </div>
+                </div>
+
                 <canvas
                   id="myChart"
-                  style="width: 100%; max-width: 600px; height: 250px;"
+                  style="width: 100%; max-width: 600px; height: 250px"
                 ></canvas>
               </div>
               <!-- Total Job post -->
               <div class="job-status">
                 <div class="d-flex">
-                 <div class="tolal-img"> <img src="./images/Admin-monitoring/Posted.png" alt="" /></div>
+                  <div class="tolal-img">
+                    <img src="./images/Admin-monitoring/Posted.png" alt="" />
+                  </div>
                   <div class="total-text">
                     <p>Total Jobs Posted</p>
-                    <p>149.00</p>
-                    <p>15+ | Today</p>
+                    <h6>149.00</h6>
+                    <p><span>15+ | Today</span></p>
                   </div>
                 </div>
                 <div class="d-flex">
-                  <div class="tolal-img"><img src="./images/Admin-monitoring/progress.png" alt="" /></div>
+                  <div class="tolal-img">
+                    <img src="./images/Admin-monitoring/progress.png" alt="" />
+                  </div>
                   <div class="total-text">
                     <p>Total Jobs Posted</p>
-                    <p>149.00</p>
-                    <p>15+ | Today</p>
+                    <h6>55.00</h6>
+                    <p><span>16+ | Today</span></p>
                   </div>
                 </div>
                 <div class="d-flex">
-                  <div class="tolal-img"><img src="./images/Admin-monitoring/rejected.png" alt="" /></div>
-                  <div  class="total-text">
+                  <div class="tolal-img">
+                    <img src="./images/Admin-monitoring/rejected.png" alt="" />
+                  </div>
+                  <div class="total-text">
                     <p>Total Jobs Posted</p>
-                    <p>149.00</p>
-                    <p>15+ | Today</p>
+                    <h6>16.00</h6>
+                    <p><span>02+ | Today</span></p>
                   </div>
                 </div>
                 <div class="d-flex">
-                  <div class="tolal-img-tced"><img src="./images/Admin-monitoring/tced-full.png" alt="" /></div>
-                  <div  class="total-text">
+                  <div class="tolal-img-tced">
+                    <img src="./images/Admin-monitoring/tced-full.png" alt="" />
+                  </div>
+                  <div class="total-text">
                     <p>Total Jobs Posted</p>
-                    <p>149.00</p>
-                    <p>15+ | Today</p>
+                    <h6>9.00</h6>
+                    <p><span>03+ | Today</span></p>
                   </div>
                 </div>
               </div>
@@ -177,94 +276,113 @@
             </div>
             <!-- Number of MTOs -->
             <div class="number0f-mtos">
-             <div class="numnerof-img">
-              <img src="./images/Admin-monitoring/number-of-MTOs.png" alt="">
-             </div>
-             <div class="total-text">
-              <p>Number of MTOs Working on jobs</p>
-              <p>71.00</p>
-              <p>8+ | Today</p>
-             </div>
+              <div class="numnerof-img">
+                <img
+                  src="./images/Admin-monitoring/number-of-MTOs.png"
+                  alt=""
+                />
+              </div>
+              <div class="total-text">
+                <p>Number of MTOs Working on jobs</p>
+                <h6>71.00</h6>
+                <p>8+ | Today</p>
+              </div>
             </div>
-               <!-- Most Recent Jobs  -->
-             <div class="most-recent">
-               <h6>Most Recent jobs Posted</h6>
-               <img src="./images/Admin-monitoring/in-progress.png" alt="">
-             </div>
-             <!-- --------------------------------------- -->
-              <div class="recent-jobs">
-               <div>
-               <div class="compliance-extract">
-               <div>
-                 <img class="recent-jobs-blue" src="./images/Admin-monitoring/pen-blue.png" alt="">
-               </div>
-               <div class="total-text">
-                 <p> Compliance Extraction</p>
-                 <p>28 July 2021</p>
-               </div>
-             </div>
+            <!-- Most Recent Jobs  -->
+            <div class="most-recent">
+              <h5>Most Recent jobs Posted</h5>
+              <img src="./images/Admin-monitoring/in-progress.png" alt="" />
+            </div>
+            <!-- --------------------------------------- -->
+            <div class="recent-jobs">
+              <div>
+                <div class="compliance-extract">
+                  <div>
+                    <img
+                      class="recent-jobs-blue"
+                      src="./images/Admin-monitoring/pen-blue.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="total-text">
+                    <p>Compliance Extraction</p>
+                    <p><span>28 July 2021</span></p>
+                  </div>
+                </div>
               </div>
               <!-- -------- -->
               <div class="total-text price-progress">
                 <p>$2.00</p>
-                <p>In Progress</p>
+                <p><span>In Progress</span></p>
               </div>
             </div>
-             <!-- --------------------------------------- -->
-              <div class="recent-jobs">
-               <div>
-               <div class="compliance-extract">
-               <div>
-                 <img class="recent-jobs-yellow" src="./images/Admin-monitoring/pen-yellow.png" alt="">
-               </div>
-               <div>
-                 <p> <strong><small>Data Entry (Fields)</small></strong></p>
-                 <p><small>29 July 2021</small></p>
-               </div>
-             </div>
+            <!-- --------------------------------------- -->
+            <div class="recent-jobs">
+              <div>
+                <div class="compliance-extract">
+                  <div>
+                    <img
+                      class="recent-jobs-yellow"
+                      src="./images/Admin-monitoring/pen-yellow.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="total-text">
+                    <p>Data Entry (Fields)</p>
+                    <p><span>29 July 2021</span></p>
+                  </div>
+                </div>
               </div>
               <!-- -------- -->
-              <div class="price-progress">
-                <p><strong><small>$3.50</small></strong></p>
-                <p><small>Initiated</small></p>
+              <div class="price-progress total-text">
+                <p>$3.50</p>
+                <p><span>Initiated</span></p>
               </div>
             </div>
-             <!-- --------------------------------------- -->
-              <div class="recent-jobs">
-               <div>
-               <div class="compliance-extract">
-               <div>
-                 <img class="recent-jobs-blue" src="./images/Admin-monitoring/pen-blue.png" alt="">
-               </div>
-               <div>
-                 <p> <strong><small>Collecting Copies of Documents</small></strong></p>
-                 <p><small>30 July 2021</small></p>
-               </div>
-             </div>
+            <!-- --------------------------------------- -->
+            <div class="recent-jobs">
+              <div>
+                <div class="compliance-extract">
+                  <div>
+                    <img
+                      class="recent-jobs-blue"
+                      src="./images/Admin-monitoring/pen-blue.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="total-text">
+                    <p>Collecting Copies of Documents</p>
+                    <p><span>30 July 2021</span></p>
+                  </div>
+                </div>
               </div>
               <!-- -------- -->
-              <div class="price-progress">
-                <p><strong><small>$1.75</small></strong></p>
-                <p>In Progress</p>
+              <div class="price-progress total-text">
+                <p>$1.75</p>
+                <p><span>In Progress</span></p>
               </div>
             </div>
-             <!-- --------------------------------------- -->
-              <div class="recent-jobs">
-               <div>
-               <div class="compliance-extract">
-               <div>
-                 <img class="recent-jobs-yellow" src="./images/Admin-monitoring/pen-yellow.png" alt="">
-               </div>
-               <div>
-                 <p> <strong><small>Combining Data Entry Fields</small></strong></p>
-                 <p><small>30 July 2021</small></p>
-               </div>
-             </div>
+            <!-- --------------------------------------- -->
+            <div class="recent-jobs">
+              <div>
+                <div class="compliance-extract">
+                  <div>
+                    <img
+                      class="recent-jobs-yellow"
+                      src="./images/Admin-monitoring/pen-yellow.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="total-text">
+                    <p>Combining Data Entry Fields</p>
+                    <p><span>30 July 2021</span></p>
+                  </div>
+                </div>
               </div>
               <!-- -------- -->
-              <div class="price-progress">
-                <p><strong><small>$3.00</small></strong></p>
-                <p><small>Initiated</small></p>
+              <div class="price-progress total-text">
+                <p>$3.00</p>
+                <p><span>Initiated</span></p>
               </div>
             </div>
           </div>
@@ -275,7 +393,9 @@
     <!-------------------- Activity Report Chart ------------------ -->
     <script>
       var xValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-      var yValues = [55, 49, 44, 24, 35, 12, 45, 23, 60, 14, 33, 15, 56, 23];
+      var yValues = [
+        55, 49, 44, 24, 35, 12, 45, 23, 60, 14, 33, 15, 56, 100, 60, 80,
+      ];
       var barColors = [
         'red',
         'green',
@@ -291,6 +411,8 @@
         'green',
         'blue',
         'orange',
+        'red',
+        'green',
       ];
 
       new Chart('myChart', {
@@ -308,7 +430,6 @@
           legend: { display: false },
           title: {
             display: true,
-            text: 'World Wine Production 2018',
           },
         },
       });
