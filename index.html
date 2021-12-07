@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Font Family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <!-- style  -->
     <link rel="stylesheet" href="styles/style.css" />
     <!-- bootstrap -->
@@ -66,8 +70,8 @@
                   </div>
                 </div>
                 <div class="d-flex">
-                  <div class="tolal-img"><img src="./images/Admin-monitoring/tced-full.png" alt="" /></div>
-                  <div>
+                  <div class="tolal-img-tced"><img src="./images/Admin-monitoring/tced-full.png" alt="" /></div>
+                  <div  class="total-text">
                     <p>Total Jobs Posted</p>
                     <p>149.00</p>
                     <p>15+ | Today</p>
@@ -78,7 +82,7 @@
             <div class="activity-report-table">
               <table class="table caption-top">
                 <thead>
-                  <tr>
+                  <tr class="table-head">
                     <th scope="col">Job ID</th>
                     <th scope="col">Title</th>
                     <th scope="col">Category</th>
@@ -89,7 +93,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr class="table-text">
                     <td>12RQ..</td>
                     <td>Docu..</td>
                     <td>Data Entry</td>
@@ -98,7 +102,7 @@
                     <td>04.08.2021</td>
                     <td>$2.00</td>
                   </tr>
-                  <tr>
+                  <tr class="table-text">
                     <td>12RQ..</td>
                     <td>Docu..</td>
                     <td>Data Entry</td>
@@ -107,7 +111,7 @@
                     <td>04.08.2021</td>
                     <td>$2.00</td>
                   </tr>
-                  <tr>
+                  <tr class="table-text">
                     <td>12RQ..</td>
                     <td>Docu..</td>
                     <td>Data Entry</td>
@@ -116,7 +120,7 @@
                     <td>04.08.2021</td>
                     <td>$2.00</td>
                   </tr>
-                  <tr>
+                  <tr class="table-text">
                     <td>12RQ..</td>
                     <td>Docu..</td>
                     <td>Data Entry</td>
@@ -125,7 +129,7 @@
                     <td>04.08.2021</td>
                     <td>$2.00</td>
                   </tr>
-                  <tr>
+                  <tr class="table-text">
                     <td>12RQ..</td>
                     <td>Docu..</td>
                     <td>Data Entry</td>
@@ -134,7 +138,7 @@
                     <td>04.08.2021</td>
                     <td>$2.00</td>
                   </tr>
-                  <tr>
+                  <tr class="table-text">
                     <td>12RQ..</td>
                     <td>Docu..</td>
                     <td>Data Entry</td>
@@ -143,7 +147,7 @@
                     <td>04.08.2021</td>
                     <td>$2.00</td>
                   </tr>
-                  <tr>
+                  <tr class="table-text">
                     <td>12RQ..</td>
                     <td>Docu..</td>
                     <td>Data Entry</td>
@@ -173,12 +177,12 @@
             </div>
             <!-- Number of MTOs -->
             <div class="number0f-mtos">
-             <div class="tolal-img">
+             <div class="numnerof-img">
               <img src="./images/Admin-monitoring/number-of-MTOs.png" alt="">
              </div>
              <div class="numnerof-text">
-              <p>Number of MTOs Working on jobs</p>
-              <p>71.00</p>
+              <p><strong><small>Number of MTOs Working on jobs</small></strong></p>
+              <p><small>71.00</small></p>
               <p><small>8+ | Today</small</p>
              </div>
             </div>
@@ -192,16 +196,16 @@
                <div>
                <div class="compliance-extract">
                <div>
-                 <img src="./images/Admin-monitoring/pen-blue.png" alt="">
+                 <img class="recent-jobs-blue" src="./images/Admin-monitoring/pen-blue.png" alt="">
                </div>
-               <div>
-                 <p> <strong> Compliance Extraction</strong></p>
-                 <p><small>28 July 2021</small></p>
+               <div class="total-text">
+                 <p> Compliance Extraction</p>
+                 <p>28 July 2021</p>
                </div>
              </div>
               </div>
               <!-- -------- -->
-              <div class="price-progress">
+              <div class="total-text price-progress">
                 <p>$2.00</p>
                 <p>In Progress</p>
               </div>
@@ -211,17 +215,36 @@
                <div>
                <div class="compliance-extract">
                <div>
-                 <img src="./images/Admin-monitoring/pen-blue.png" alt="">
+                 <img class="recent-jobs-yellow" src="./images/Admin-monitoring/pen-yellow.png" alt="">
                </div>
                <div>
-                 <p> <strong> Compliance Extraction</strong></p>
-                 <p><small>28 July 2021</small></p>
+                 <p> <strong><small>Data Entry (Fields)</small></strong></p>
+                 <p><small>29 July 2021</small></p>
                </div>
              </div>
               </div>
               <!-- -------- -->
               <div class="price-progress">
-                <p>$2.00</p>
+                <p><strong><small>$3.50</small></strong></p>
+                <p><small>Initiated</small></p>
+              </div>
+            </div>
+             <!-- --------------------------------------- -->
+              <div class="recent-jobs">
+               <div>
+               <div class="compliance-extract">
+               <div>
+                 <img class="recent-jobs-blue" src="./images/Admin-monitoring/pen-blue.png" alt="">
+               </div>
+               <div>
+                 <p> <strong><small>Collecting Copies of Documents</small></strong></p>
+                 <p><small>30 July 2021</small></p>
+               </div>
+             </div>
+              </div>
+              <!-- -------- -->
+              <div class="price-progress">
+                <p><strong><small>$1.75</small></strong></p>
                 <p>In Progress</p>
               </div>
             </div>
@@ -230,37 +253,18 @@
                <div>
                <div class="compliance-extract">
                <div>
-                 <img src="./images/Admin-monitoring/pen-blue.png" alt="">
+                 <img class="recent-jobs-yellow" src="./images/Admin-monitoring/pen-yellow.png" alt="">
                </div>
                <div>
-                 <p> <strong> Compliance Extraction</strong></p>
-                 <p><small>28 July 2021</small></p>
-               </div>
-             </div>
-              </div>
-              <!-- -------- -->
-              <div class="price-progress">
-                <p>$2.00</p>
-                <p>In Progress</p>
-              </div>
-            </div>
-             <!-- --------------------------------------- -->
-              <div class="recent-jobs">
-               <div>
-               <div class="compliance-extract">
-               <div>
-                 <img src="./images/Admin-monitoring/pen-blue.png" alt="">
-               </div>
-               <div>
-                 <p> <strong> Compliance Extraction</strong></p>
-                 <p><small>28 July 2021</small></p>
+                 <p> <strong><small>Combining Data Entry Fields</small></strong></p>
+                 <p><small>30 July 2021</small></p>
                </div>
              </div>
               </div>
               <!-- -------- -->
               <div class="price-progress">
-                <p>$2.00</p>
-                <p>In Progress</p>
+                <p><strong><small>$3.00</small></strong></p>
+                <p><small>Initiated</small></p>
               </div>
             </div>
           </div>
