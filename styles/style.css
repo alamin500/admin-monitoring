@@ -50,7 +50,14 @@ margin: 30px;
   padding: 18px;
   margin-top: 25px;
 }
-
+.header-mto{
+  font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 41px;
+color: #334F55;
+margin: 76px;
+}
 .activity-report {
   width: 378px;
   position: relative;
