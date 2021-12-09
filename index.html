@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -28,7 +30,7 @@
     <nav class="nav sidebar d-block">
       <div class="logo">
 
-      <img height="52px" width="64px" class="m-4" src="./images/Side-Bar/varal-logo.png" alt="" />
+        <img height="52px" width="64px" class="m-4" src="./images/Side-Bar/varal-logo.png" alt="" />
       </div>
       <ul>
         <li><svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,14 +44,14 @@
               d="M6.25 21.875H18.75V2.34375C18.75 1.0498 17.7002 0 16.4062 0H8.59375C7.2998 0 6.25 1.0498 6.25 2.34375V21.875ZM9.375 3.125H15.625V4.6875H9.375V3.125ZM25 7.03125V19.5312C25 20.8252 23.9502 21.875 22.6562 21.875H20.3125V4.6875H22.6562C23.9502 4.6875 25 5.7373 25 7.03125ZM4.6875 21.875H2.34375C1.0498 21.875 0 20.8252 0 19.5312V7.03125C0 5.7373 1.0498 4.6875 2.34375 4.6875H4.6875V21.875Z"
               fill="#334F55" />
           </svg>
-         Jobs</li>
+          Jobs</li>
         <li>
           <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.5 8.75C9.91797 8.75 11.875 6.79297 11.875 4.375C11.875 1.95703 9.91797 0 7.5 0C5.08203 0 3.125 1.95703 3.125 4.375C3.125 6.79297 5.08203 8.75 7.5 8.75ZM10.5 10H10.1758C9.36328 10.3906 8.46094 10.625 7.5 10.625C6.53906 10.625 5.64062 10.3906 4.82422 10H4.5C2.01562 10 0 12.0156 0 14.5V15.625C0 16.6602 0.839844 17.5 1.875 17.5H13.125C14.1602 17.5 15 16.6602 15 15.625V14.5C15 12.0156 12.9844 10 10.5 10ZM18.75 8.75C20.8203 8.75 22.5 7.07031 22.5 5C22.5 2.92969 20.8203 1.25 18.75 1.25C16.6797 1.25 15 2.92969 15 5C15 7.07031 16.6797 8.75 18.75 8.75ZM20.625 10H20.4766C19.9336 10.1875 19.3594 10.3125 18.75 10.3125C18.1406 10.3125 17.5664 10.1875 17.0234 10H16.875C16.0781 10 15.3438 10.2305 14.6992 10.6016C15.6523 11.6289 16.25 12.9922 16.25 14.5V16C16.25 16.0859 16.2305 16.168 16.2266 16.25H23.125C24.1602 16.25 25 15.4102 25 14.375C25 11.957 23.043 10 20.625 10Z"
               fill="#334F55" />
           </svg>
-         MTO Bank
+          MTO Bank
         </li>
         <li class="active">
           <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +122,7 @@
       </header>
       <div class="admin-title">
         <div class="d-flex align-items-center">
-          <h1>Admin Monitoring</h1>
+          <h1 class="m-0">Admin Monitoring</h1>
 
           <p class="m-0 ms-3 admin"><span>Admin</span></p>
         </div>
@@ -141,22 +143,22 @@
             <div class="activity-report">
               <div class="d-flex justify-content-between">
                 <div class="activity-text">
-                  <h3>Activity Report</h3>
-                  <p><span>29 July 2021 | Today</span></p>
+                  <h3 class="m-0">Activity Report</h3>
+                  <p class="m-0 tinny-font fw-600">29 July 2021 | Today</p>
                 </div>
                 <div class="total-text">
-                  <p class="m-0">
+                  <p class="d-flex align-items-center">
                     Total Completed Jobs
-                    <img src="./images/Admin-monitoring/activity-report.png" alt="" />
+                    <img src="./images/Admin-monitoring/activity-report.png" alt="" class="ms-2" />
                   </p>
                   <h6>33.0</h6>
                   <p><span>11+ | Today</span></p>
                 </div>
               </div>
 
-              <div class="text-center">
-                <canvas id="myChart" style="width: 100%; max-width: 600px; height: 250px"></canvas>
-                <p>Month of Jully (Per 15 Days)</p>
+              <div class="my-2 text-center chart-text">
+                <canvas id="myChart" style="width: 100%; max-width: 600px; height: 218px"></canvas>
+                <p class="m-0">Month of Jully (Per 15 Days)</p>
               </div>
             </div>
             <!-- Total Job post -->
@@ -214,6 +216,13 @@
                   <th scope="col">Date Accepted</th>
                   <th scope="col">Deadline</th>
                   <th scope="col">Pay</th>
+                  <th scope="col"><svg width="22" height="11" viewBox="0 0 22 11" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.3292 3.42317H0.585938C0.262354 3.42317 0 3.68552 0 4.0091V6.74348C0 7.06706 0.262354 7.32942 0.585938 7.32942H15.3292V9.57839C15.3292 10.6224 16.5914 11.1453 17.3297 10.4071L21.5318 6.20495C21.9895 5.74729 21.9895 5.00529 21.5318 4.54768L17.3297 0.345578C16.5915 -0.392655 15.3292 0.130197 15.3292 1.17424V3.42317Z"
+                        fill="#ADADAD" />
+                    </svg>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -224,7 +233,7 @@
                   <td>26.07.2021</td>
                   <td>28.04.2021</td>
                   <td>04.08.2021</td>
-                  <td>$2.00</td>
+                  <td class='table-price'>$2.00</td>
                 </tr>
                 <tr class="table-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <td>12RQ..</td>
@@ -233,7 +242,7 @@
                   <td>26.07.2021</td>
                   <td>28.04.2021</td>
                   <td>04.08.2021</td>
-                  <td>$2.00</td>
+                  <td class='table-price'>$2.00</td>
                 </tr>
                 <tr class="table-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <td>12RQ..</td>
@@ -242,7 +251,7 @@
                   <td>26.07.2021</td>
                   <td>28.04.2021</td>
                   <td>04.08.2021</td>
-                  <td>$2.00</td>
+                  <td class='table-price'>$2.00</td>
                 </tr>
                 <tr class="table-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <td>12RQ..</td>
@@ -251,7 +260,7 @@
                   <td>26.07.2021</td>
                   <td>28.04.2021</td>
                   <td>04.08.2021</td>
-                  <td>$2.00</td>
+                  <td class='table-price'>$2.00</td>
                 </tr>
                 <tr class="table-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <td>12RQ..</td>
@@ -260,7 +269,7 @@
                   <td>26.07.2021</td>
                   <td>28.04.2021</td>
                   <td>04.08.2021</td>
-                  <td>$2.00</td>
+                  <td class='table-price'>$2.00</td>
                 </tr>
                 <tr class="table-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <td>12RQ..</td>
@@ -269,7 +278,7 @@
                   <td>26.07.2021</td>
                   <td>28.04.2021</td>
                   <td>04.08.2021</td>
-                  <td>$2.00</td>
+                  <td class='table-price'>$2.00</td>
                 </tr>
                 <tr class="table-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <td>12RQ..</td>
@@ -278,7 +287,7 @@
                   <td>26.07.2021</td>
                   <td>28.04.2021</td>
                   <td>04.08.2021</td>
-                  <td>$2.00</td>
+                  <td class='table-price'>$2.00</td>
                 </tr>
               </tbody>
             </table>
@@ -288,15 +297,19 @@
           <div class="inprogress">
             <div class="inprogress-heading">
               <h3>86.00</h3>
-              <h5>
-                In Progress
-                <img src="./images/Admin-monitoring/in-progress.png" alt="" />
-              </h5>
+              <div class="in-progress-status">
+                <h5 class="m-0">
+                  In Progress
+                  <img src="./images/Admin-monitoring/in-progress.png" alt="" />
+                </h5>
+                <p class="m-0">15+ | Today</p>
+              </div>
             </div>
-         <div class="text-center">
-               <canvas class="progress-chart" id="Chart" style="width: 100%; max-width: 600px; height: 200px;"></canvas>
-            <p>Last 10 Days</p>
-         </div>
+                          <div class="text-center chart-text">
+               <canvas class="progress-chart" id="Chart" style="width: 100%; max-width: 600px; height: 180px;"></canvas>
+                <p class="m-0">Last 10 Days</p>
+              </div>
+
           </div>
           <!-- Number of MTOs -->
           <div class="number0f-mtos">
@@ -306,7 +319,14 @@
             <div class="total-text-mtos">
               <p>Number of MTOs Working on jobs</p>
               <h6>71.00</h6>
-              <p>8+ | Today</p>
+              <div class="mtso-increase-content d-flex align-items-center justify-content-between">
+                <p class="tinny-font m-0">8+ | Today</p>
+                <p class="mtso-increase m-0 d-flex align-items-center">+16% <span class="mb-1"><svg width="18"
+                      height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 0L17.6603 11.7568H0.339746L9 0Z" fill="#FFA500" />
+                    </svg>
+                  </span></p>
+              </div>
             </div>
           </div>
           <!-- Most Recent Jobs  -->
@@ -322,14 +342,14 @@
                   <img class="recent-jobs-blue" src="./images/Admin-monitoring/pen-blue.png" alt="" />
                 </div>
                 <div class="total-text">
-                  <p>Compliance Extraction</p>
-                  <p><span>28 July 2021</span></p>
+                  <p class="mb-1">Compliance Extraction</p>
+                  <p><span class="tinny-font">28 July 2021</span></p>
                 </div>
               </div>
             </div>
             <!-- -------- -->
             <div class="total-text price-progress">
-              <p>$2.00</p>
+              <p class="mb-1">$2.00</p>
               <p><span>In Progress</span></p>
             </div>
           </div>
@@ -341,14 +361,14 @@
                   <img class="recent-jobs-yellow" src="./images/Admin-monitoring/pen-yellow.png" alt="" />
                 </div>
                 <div class="total-text">
-                  <p>Data Entry (Fields)</p>
+                  <p class="mb-1"> Data Entry (Fields)</p>
                   <p><span>29 July 2021</span></p>
                 </div>
               </div>
             </div>
             <!-- -------- -->
             <div class="price-progress total-text">
-              <p>$3.50</p>
+              <p class="mb-1">$3.50</p>
               <p><span>Initiated</span></p>
             </div>
           </div>
@@ -360,14 +380,14 @@
                   <img class="recent-jobs-blue" src="./images/Admin-monitoring/pen-blue.png" alt="" />
                 </div>
                 <div class="total-text">
-                  <p>Collecting Copies of Documents</p>
+                  <p class="mb-1">Collecting Copies of Documents</p>
                   <p><span>30 July 2021</span></p>
                 </div>
               </div>
             </div>
             <!-- -------- -->
             <div class="price-progress total-text">
-              <p>$1.75</p>
+              <p class="mb-1">$1.75</p>
               <p><span>In Progress</span></p>
             </div>
           </div>
@@ -379,14 +399,14 @@
                   <img class="recent-jobs-yellow" src="./images/Admin-monitoring/pen-yellow.png" alt="" />
                 </div>
                 <div class="total-text">
-                  <p>Combining Data Entry Fields</p>
+                  <p class="mb-1">Combining Data Entry Fields</p>
                   <p><span>30 July 2021</span></p>
                 </div>
               </div>
             </div>
             <!-- -------- -->
             <div class="price-progress total-text">
-              <p>$3.00</p>
+              <p class="mb-1">$3.00</p>
               <p><span>Initiated</span></p>
             </div>
           </div>
@@ -631,7 +651,7 @@
   <script>
       var xValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
       var yValues = [
-        100, 10, 25, 17, 35, 28, 8, 65, 37, 40, 28, 37, 13, 55, 35, 30,
+        100, 010, 025, 017, 035, 28, 08, 065, 037, 040, 29, 037, 013, 055, 035, 030,
       ];
       var barColors = [
         '#FFFFFF',
@@ -665,6 +685,20 @@
         },
 
         options:{
+           legend: {
+        display: false
+    },
+    tooltips: {
+        callbacks: {
+           label: function(tooltipItem) {
+                  return tooltipItem.yLabel;
+           }
+        }
+    },
+
+
+
+
           scales: {
               xAxes: [{
                 barThickness: 7,  // number (pixels) or 'flex'
@@ -676,12 +710,14 @@
             yAxes: [{
             gridLines: {
                 display: true,
-                  borderDash: [8,8],
+                  borderDash: [12,8],
             }
         }],
           },
           title: {
         display: true,
+        padding: 0,
+        fontColor: "#334F55",
         text: 'Number Completed',
         position: "left",
 
@@ -702,7 +738,6 @@
   <!-- -----------------In Progress Chart ------------------ -->
   <script>
       var xValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
       new Chart('Chart', {
         type: 'line',
         data: {
@@ -711,37 +746,55 @@
             {
               data: [040, 020, 045, 025, 070, 045, 065, 100, 070, 50, 90],
               borderColor: 'blue',
-              fill: false,
-              tension: 0.4
+              fill: true,
+              backgroundColor: "rgba(92, 204, 179, 0.15)",
+              tension: 0.4,
+              borderColor: "#525DED",
+
             },
           ],
         },
         options: {
+            responsive: true,
           legend: { display: false },
+
+            plugins: {
+    datalabels: {
+        display: false,
+    },
+},
+
              scales: {
               xAxes: [{
                  gridLines: {
                 display:false
             }
             }],
+
             yAxes: [{
             gridLines: {
                 display: false,
             }
         }],
           },
+
+
            title: {
         display: true,
         text: 'Number in Progress',
-        position: "left"
+     fontColor: "#334F55",
+        position: "left",
+
+        padding: 0,
+        font: {
+          weight:'bold'
+        }
 
     }
 
         },
       });
     </script>
-
 </body>
 
 </html>
-
