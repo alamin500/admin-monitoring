@@ -94,7 +94,7 @@ h2 {
 .activity-report-table {
   background: #ffffff;
   border-radius: 15px;
-     padding: 0px 5px 0 35px;
+     padding: 0 18px;
   margin-top: 25px;
 }
 .table-price {
@@ -603,4 +603,10 @@ span {
 font-weight: bold;
 font-size: 11px;
 line-height: 15px;
+}
+table, tr, td{
+  border-collapse: collapse;
+}
+td{
+  height: 40px;
 }
