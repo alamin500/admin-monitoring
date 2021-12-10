@@ -604,9 +604,3 @@ font-weight: bold;
 font-size: 11px;
 line-height: 15px;
 }
-table, tr, td{
-  border-collapse: collapse;
-}
-td{
-  height: 40px;
-}
