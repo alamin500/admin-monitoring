@@ -604,3 +604,29 @@ font-weight: bold;
 font-size: 11px;
 line-height: 15px;
 }
+.calendar-date{
+  font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 22px;
+
+color: #334F55;
+}
+.paggination p{
+  margin:0 20px 0 0;
+  background: #747474;
+  padding: 6px 11px;
+  border-radius: 50%;
+  color: white;
+  font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 19px;
+
+}
+.paggination{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 8px;
+
+}
