@@ -31,12 +31,14 @@ h2 {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  align-items: baseline;
+  /* align-items: baseline; */
 }
 .sidebar {
   width: 215px;
   background: #fff;
   min-width: 215px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .sidebar ul {
   list-style: none;
@@ -52,6 +54,21 @@ h2 {
   line-height: 19px;
 
   color: #334f55;
+}
+.sidebar ul li span {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #334f55;
+}
+
+.responsive {
+  width: 112px;
+  background: #fff;
+  min-width: 112px;
+}
+.responsive ul li span {
+  display: none;
 }
 .sidebar ul li:hover {
   background-color: #f5f5f5;
@@ -79,10 +96,16 @@ h2 {
 .admin-main-content-wrapper {
   display: flex;
 }
+.admin-full-content header > div > div {
+  justify-content: space-between;
+}
 .admin-main-content-wrapper .content {
   max-width: 730px;
   width: 100%;
   margin-right: 32px;
+}
+.admin-full-content .admin-main-content-wrapper .content {
+  max-width: 834px;
 }
 .content .activity-report-wrapper {
   background: #ffffff;
@@ -94,8 +117,8 @@ h2 {
 .activity-report-table {
   background: #ffffff;
   border-radius: 15px;
-     padding: 0 18px;
-  margin-top: 25px;
+  padding: 0 18px;
+  margin: 25px 0px 0 0px;
 }
 .table-price {
   position: relative;
@@ -113,6 +136,12 @@ h2 {
 .activity-report {
   width: 378px;
   position: relative;
+}
+.admin-full-content .activity-report {
+  width: 500px;
+}
+.admin-full-content canvas {
+  height: 238px !important;
 }
 .table-text {
   height: 52px;
@@ -171,9 +200,11 @@ h2 {
 }
 .modal-content {
   border-radius: 15px !important;
+  width: 1250px !important;
+  background: #fff;
 }
 .job-status-modal {
-  margin-left: 10px;
+  margin-left: 13px;
 }
 .modal-main-content {
   margin-top: 42px;
@@ -336,26 +367,26 @@ input:focus {
   height: 282px;
   padding: 23px 13px 10px 12px;
 }
-.inprogress::before{
-content: url(../images/Admin-monitoring/+30%.png);
-Content: "+30%";
-    position: absolute;
-    width: 17px;
-    top: 180px;
-    color: #525DED;
-    font-weight: bold;
-    left: 100;
-    right: 90px;
-    margin: 0 auto;
+.inprogress::before {
+  content: url(../images/Admin-monitoring/+30%.png);
+  content: "+30%";
+  position: absolute;
+  width: 17px;
+  top: 180px;
+  color: #525ded;
+  font-weight: bold;
+  left: 100;
+  right: 90px;
+  margin: 0 auto;
 }
-.inprogress::after{
-content: url(../images/Admin-monitoring/arrow-up.png);
-    position: absolute;
+.inprogress::after {
+  content: url(../images/Admin-monitoring/arrow-up.png);
+  position: absolute;
 
-    top: 180px;
-    left: 100;
-    right: 40px;
-    margin: 0 auto;
+  top: 180px;
+  left: 100;
+  right: 40px;
+  margin: 0 auto;
 }
 
 .inprogress-heading {
@@ -505,7 +536,7 @@ span {
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #f5f5f5;
-      padding: 8px 0px;
+  padding: 8px 0px;
 }
 .recent-jobs-blue {
   background: rgba(82, 93, 237, 0.25);
@@ -528,7 +559,7 @@ span {
   position: absolute;
   right: 0;
   z-index: 10;
-  top: -60px;
+  top: -50px;
 }
 .modal-dialog {
   margin-top: 100px !important;
@@ -543,7 +574,9 @@ span {
 }
 .activity-report-modal-body {
   width: 896px;
-  /* height: 704px; */
+  padding: 0;
+  border-radius: 15px;
+  margin: 25px 18px 0 30px;
 }
 .activity-report-modal-body tbody tr:hover:after {
   left: 0px !important;
@@ -552,6 +585,10 @@ span {
 .caption-top-modal {
   background: #f5f5f5;
   border-radius: 15px;
+  padding: 5px 5px 24px;
+}
+.table tbody tr:last-child td {
+  border: 0 !important;
 }
 .total-modal {
   background: #f5f5f5;
@@ -598,35 +635,57 @@ span {
   margin: 0;
 }
 /* chart  */
-.chart-text{
-   font-style: normal;
-font-weight: bold;
-font-size: 11px;
-line-height: 15px;
-}
-.calendar-date{
+.chart-text {
   font-style: normal;
-font-weight: 800;
-font-size: 16px;
-line-height: 22px;
-
-color: #334F55;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
 }
-.paggination p{
-  margin:0 20px 0 0;
+.calendar-date {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 60px;
+  justify-content: center;
+  color: #334f55;
+}
+.paggination p {
+  margin: 0 20px 0 0;
   background: #747474;
   padding: 6px 11px;
   border-radius: 50%;
   color: white;
   font-style: normal;
-font-weight: 800;
-font-size: 14px;
-line-height: 19px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
 }
 
-.paggination{
- display: flex;
- justify-content: center;
- margin-bottom: 8px;
-
+.paggination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.pagination li {
+  margin: 0 10px;
+}
+.pagination .page-item .page-link {
+  background: #747474;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+.pagination .active .page-link {
+  background: #525ded;
+}
+.pagination li a {
+  border-radius: 50% !important;
+  padding: 0;
+  height: 31px;
+  width: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
