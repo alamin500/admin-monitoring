@@ -758,3 +758,32 @@ span {
   align-items: center;
   justify-content: center;
 }
+/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #525ded;
+} */
+
+/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link .total-modal-nav {
+    color: #fff;
+    background-color: #525ded !important;
+} */
+/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link .tolal-modal-nav{
+    color: #fff;
+    background-color: #d11b94 !important;
+} */
+
+.tolal-modal-nav{
+
+    background-color:white;
+
+}
+.tolal-modal-nav:active{
+    color: #fff;
+    background-color: #d11b94 !important;
+
+}
+.tolal-modal-nav:focus{
+    color: #fff;
+    background-color: #d11b94 !important;
+
+}
