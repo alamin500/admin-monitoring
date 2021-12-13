@@ -1,0 +1,102 @@
+
+.activity-report-table {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 0 18px;
+  margin: 25px 0px 0 0px;
+     max-width: 1150px;
+    width: 100%;
+}
+
+.activity-report {
+  width: 378px;
+  position: relative;
+}
+.admin-full-content .activity-report {
+  width: 500px;
+}
+.admin-full-content canvas {
+  height: 238px !important;
+}
+.admin-full-content .inprogress canvas {
+  height: 180px !important;
+}
+.table-text {
+  height: 52px;
+}
+.table-text td {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 6px;
+  line-height: 40px;
+  color: #334f55;
+}
+.table-head {
+ font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 27px;
+
+color: #525DED;
+  padding: 13px 32px;
+}
+.table-head th {
+  border: 0 !important;
+  padding: 13px 5px !important;
+}
+
+.activity-report-table table tbody tr {
+  position: relative;
+}
+.activity-report-table table tbody tr:hover td {
+  text-shadow: 1px 0 0 currentColor;
+  font-size: 14px;
+  color: #334f55;
+}
+.activity-report-table table tbody tr:hover::after {
+  background: rgba(82, 93, 237, 0.25);
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  cursor: pointer;
+  left: -15px;
+  right: -15px;
+  top: 0;
+  bottom: 0;
+}
+.caption-top {
+    caption-side: top;
+    text-align: center;
+}
+
+
+.jobs-title{
+ margin-right: 24px;
+}
+.jobs-title h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: #334f55;
+}
+.jobs-title span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  padding: 4px 20px;
+
+  color: #ffffff;
+  background: #ffa500;
+  border-radius: 100px;
+}
+
+
+/* No Need  */
+main{
+     background: aliceblue;
+    margin: 100px;
+    padding: 50px 200px;
+}

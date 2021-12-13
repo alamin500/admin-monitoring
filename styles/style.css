@@ -1,3 +1,4 @@
+
 p,
 h1,
 h2,
@@ -395,6 +396,7 @@ input:focus {
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+  text-align: left;
   /* white-space: pre; */
 }
 .total-text-mtos p {
@@ -421,6 +423,7 @@ input:focus {
   line-height: 16px;
   margin: 0;
   color: #525ded;
+  text-align: left;
 }
 .content-right {
   width: 339px;
@@ -758,32 +761,25 @@ span {
   align-items: center;
   justify-content: center;
 }
-/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: #525ded;
-} */
 
-/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link .total-modal-nav {
-    color: #fff;
-    background-color: #525ded !important;
-} */
-/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link .tolal-modal-nav{
-    color: #fff;
-    background-color: #d11b94 !important;
-} */
-
-.tolal-modal-nav{
-
-    background-color:white;
-
+.nav-pills .nav-link.active {
+  color: #fff;
+  background-color: #fff !important;
 }
-.tolal-modal-nav:active{
-    color: #fff;
-    background-color: #d11b94 !important;
-
+.nav-pills .nav-link.active .total-modal {
+  color: #fff;
+  background-color: #525ded !important;
 }
-.tolal-modal-nav:focus{
-    color: #fff;
-    background-color: #d11b94 !important;
-
+.nav-pills .nav-link.active .total-modal p {
+  color: #fff !important;
+  text-align: left;
 }
+.nav-pills .nav-link.active .total-modal h6 {
+  color: #fff !important;
+  text-align: left;
+}
+.nav-pills .nav-link.active .total-modal span {
+  color: #fff !important;
+  text-align: left;
+}
+
