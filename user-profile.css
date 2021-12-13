@@ -1,0 +1,91 @@
+.left-profile{
+ width: 386px;
+ height: 285px;
+ background: #FFFFFF;
+ border-radius: 15px 0px 0px 15px;
+ text-align: center;
+ margin-right: 25px;
+}
+
+.left-profile h3{
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+color: #334F55;
+}
+.left-profile h5{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+text-align: center;
+
+color: #ADADAD;
+}
+.user-info{
+ background-color:  #ADADAD;
+ align-items: center;
+width: 128px;
+height: 28px;
+border-radius: 25px;
+    padding: 10px;
+        margin: 12px auto 0;
+}
+.user-info p{
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 15px;
+margin: 0 10px;
+color: #FFFFFF;
+white-space: pre;
+}
+
+/* Right Profile  */
+.right-profile{
+ width: 703px;
+ height: 285px;
+ background: #FFFFFF;
+ border-radius: 0px 15px 15px 0px;
+}
+hr{
+height: 1px;
+color: #F5F5F5;
+}
+.right-profile p, h6{
+ margin: 0;
+}
+.right-profile p{
+ font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+color: #ADADAD;
+}
+.right-profile h6{
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 15px;
+color: #334F55;
+background: #F5F5F5;
+border-radius: 2px;
+width: 125px;
+height: 30px;
+padding: 7px;
+margin-top: 12px;
+}
+.update-name > div{
+      margin: 32px;
+}
+.update-paypal > div{
+ margin: 0 32px ;
+}
+/* No need  */
+main{
+ background: #F5F5F5;
+ padding: 100px;
+}
