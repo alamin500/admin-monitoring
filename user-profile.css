@@ -10,12 +10,12 @@
 }
 
 .profile-pen{
-position: absolute;
+    position: absolute;
     background: #334F55;
     height: 26px;
     width: 26px;
-    top: 20px;
-    left: 202px;
+    top: 19px;
+    left: 216px;
     right: 0px;
     border-radius: 50px;
     z-index: 100;
