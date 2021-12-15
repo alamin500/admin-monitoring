@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style  -->
+    <link
+      href="/your-path-to-fontawesome/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/jobs-ongoing.css" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <!-- bootstrap script  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Chart Script Link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+
+  <body>
+    <main class="page-container">
+      <nav class="nav sidebar topnav" id="myTopnav">
+        <div>
+          <div class="logo">
+            <img
+              height="52px"
+              width="64px"
+              class="m-4"
+              src="./images/Side-Bar/varal-logo.png"
+              alt=""
+            />
+          </div>
+          <ul>
+            <li>
+              <svg
+                width="26"
+                height="20"
+                viewBox="0 0 26 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.1695 5.04384L4.16732 11.6345V18.7478C4.16732 18.932 4.24048 19.1086 4.37072 19.2389C4.50095 19.3691 4.67758 19.4423 4.86176 19.4423L9.72548 19.4297C9.90905 19.4288 10.0848 19.3552 10.2143 19.2251C10.3438 19.0949 10.4165 18.9188 10.4164 18.7352V14.5812C10.4164 14.397 10.4896 14.2204 10.6198 14.0901C10.7501 13.9599 10.9267 13.8867 11.1109 13.8867H13.8887C14.0728 13.8867 14.2495 13.9599 14.3797 14.0901C14.51 14.2204 14.5831 14.397 14.5831 14.5812V18.7322C14.5828 18.8236 14.6006 18.9141 14.6354 18.9986C14.6701 19.0831 14.7212 19.1599 14.7857 19.2247C14.8503 19.2894 14.9269 19.3407 15.0113 19.3758C15.0957 19.4108 15.1862 19.4288 15.2776 19.4288L20.1395 19.4423C20.3237 19.4423 20.5004 19.3691 20.6306 19.2389C20.7608 19.1086 20.834 18.932 20.834 18.7478V11.6298L12.8335 5.04384C12.7395 4.96802 12.6223 4.92668 12.5015 4.92668C12.3807 4.92668 12.2635 4.96802 12.1695 5.04384ZM24.8097 9.52344L21.1812 6.53255V0.520833C21.1812 0.3827 21.1263 0.250224 21.0287 0.152549C20.931 0.0548734 20.7985 0 20.6604 0H18.2298C18.0917 0 17.9592 0.0548734 17.8615 0.152549C17.7639 0.250224 17.709 0.3827 17.709 0.520833V3.67231L13.8231 0.47526C13.4502 0.168394 12.9823 0.000613431 12.4993 0.000613431C12.0164 0.000613431 11.5485 0.168394 11.1756 0.47526L0.189019 9.52344C0.136279 9.56703 0.0926449 9.62058 0.0606102 9.68104C0.0285755 9.7415 0.00876769 9.80768 0.00231864 9.8758C-0.0041304 9.94392 0.00290567 10.0126 0.0230248 10.078C0.043144 10.1434 0.0759519 10.2042 0.119574 10.2569L1.22634 11.6024C1.26985 11.6553 1.32336 11.6991 1.38381 11.7313C1.44426 11.7635 1.51047 11.7835 1.57864 11.79C1.64681 11.7966 1.71561 11.7897 1.7811 11.7696C1.84659 11.7496 1.90748 11.7168 1.96029 11.6732L12.1695 3.26432C12.2635 3.18851 12.3807 3.14717 12.5015 3.14717C12.6223 3.14717 12.7395 3.18851 12.8335 3.26432L23.0432 11.6732C23.0959 11.7168 23.1567 11.7496 23.2221 11.7697C23.2875 11.7898 23.3562 11.7969 23.4243 11.7904C23.4924 11.784 23.5586 11.7642 23.6191 11.7321C23.6795 11.7001 23.7331 11.6565 23.7767 11.6037L24.8835 10.2582C24.927 10.2052 24.9597 10.1441 24.9796 10.0784C24.9995 10.0128 25.0062 9.94379 24.9993 9.8755C24.9925 9.80722 24.9722 9.74096 24.9396 9.68054C24.9071 9.62012 24.8629 9.56673 24.8097 9.52344Z"
+                  fill="#334F55"
+                />
+              </svg>
+              <span> Dashboard </span>
+            </li>
+            <li>
+              <svg
+                width="25"
+                height="22"
+                viewBox="0 0 25 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.25 21.875H18.75V2.34375C18.75 1.0498 17.7002 0 16.4062 0H8.59375C7.2998 0 6.25 1.0498 6.25 2.34375V21.875ZM9.375 3.125H15.625V4.6875H9.375V3.125ZM25 7.03125V19.5312C25 20.8252 23.9502 21.875 22.6562 21.875H20.3125V4.6875H22.6562C23.9502 4.6875 25 5.7373 25 7.03125ZM4.6875 21.875H2.34375C1.0498 21.875 0 20.8252 0 19.5312V7.03125C0 5.7373 1.0498 4.6875 2.34375 4.6875H4.6875V21.875Z"
+                  fill="#334F55"
+                />
+              </svg>
+              <span> Jobs </span>
+            </li>
+            <li>
+              <svg
+                width="25"
+                height="18"
+                viewBox="0 0 25 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.5 8.75C9.91797 8.75 11.875 6.79297 11.875 4.375C11.875 1.95703 9.91797 0 7.5 0C5.08203 0 3.125 1.95703 3.125 4.375C3.125 6.79297 5.08203 8.75 7.5 8.75ZM10.5 10H10.1758C9.36328 10.3906 8.46094 10.625 7.5 10.625C6.53906 10.625 5.64062 10.3906 4.82422 10H4.5C2.01562 10 0 12.0156 0 14.5V15.625C0 16.6602 0.839844 17.5 1.875 17.5H13.125C14.1602 17.5 15 16.6602 15 15.625V14.5C15 12.0156 12.9844 10 10.5 10ZM18.75 8.75C20.8203 8.75 22.5 7.07031 22.5 5C22.5 2.92969 20.8203 1.25 18.75 1.25C16.6797 1.25 15 2.92969 15 5C15 7.07031 16.6797 8.75 18.75 8.75ZM20.625 10H20.4766C19.9336 10.1875 19.3594 10.3125 18.75 10.3125C18.1406 10.3125 17.5664 10.1875 17.0234 10H16.875C16.0781 10 15.3438 10.2305 14.6992 10.6016C15.6523 11.6289 16.25 12.9922 16.25 14.5V16C16.25 16.0859 16.2305 16.168 16.2266 16.25H23.125C24.1602 16.25 25 15.4102 25 14.375C25 11.957 23.043 10 20.625 10Z"
+                  fill="#334F55"
+                />
+              </svg>
+              <span> MTO Bank </span>
+            </li>
+            <li class="active">
+              <svg
+                width="25"
+                height="23"
+                viewBox="0 0 25 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.9167 0H2.08333C0.93316 0 0 0.93316 0 2.08333V15.9722C0 17.1224 0.93316 18.0556 2.08333 18.0556H10.4167L9.72222 20.1389H6.59722C6.01997 20.1389 5.55556 20.6033 5.55556 21.1806C5.55556 21.7578 6.01997 22.2222 6.59722 22.2222H18.4028C18.98 22.2222 19.4444 21.7578 19.4444 21.1806C19.4444 20.6033 18.98 20.1389 18.4028 20.1389H15.2778L14.5833 18.0556H22.9167C24.0668 18.0556 25 17.1224 25 15.9722V2.08333C25 0.93316 24.0668 0 22.9167 0ZM22.2222 15.2778H2.77778V2.77778H22.2222V15.2778Z"
+                  fill="#334F55"
+                />
+              </svg>
+              <span> Monitoring </span>
+            </li>
+            <li>
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.7916 5.32708C24.6823 4.88616 24.1305 4.73674 23.8092 5.05803L20.1783 8.68889L16.8639 8.13665L16.3116 4.82219L19.9425 1.19133C20.2657 0.868092 20.11 0.317311 19.6661 0.206959C17.3527 -0.366283 14.8053 0.251392 12.9972 2.05901C11.0616 3.99456 10.5289 6.80022 11.3346 9.24651L0.915161 19.6659C-0.305054 20.8862 -0.305054 22.8647 0.915161 24.0849C2.13538 25.3051 4.11389 25.3051 5.33411 24.0849L15.7448 13.6742C18.192 14.4902 20.9923 13.9516 22.9406 12.0033C24.7506 10.1933 25.3673 7.64202 24.7916 5.32708ZM3.12512 23.0468C2.47815 23.0468 1.95325 22.5219 1.95325 21.8749C1.95325 21.2275 2.47815 20.7031 3.12512 20.7031C3.77209 20.7031 4.297 21.2275 4.297 21.8749C4.297 22.5219 3.77209 23.0468 3.12512 23.0468Z"
+                  fill="#334F55"
+                />
+              </svg>
+              <span> Setting </span>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-center calendar-date">
+          <p class="me-2 p-0">29.06.2021</p>
+          <img
+            width="17px"
+            height="19px"
+            src="./images/Admin-monitoring/calendar.png"
+            alt=""
+          />
+        </div>
+      </nav>
+
+      <section class="admin-page-wrapper" id="#fullcontent">
+        <header>
+          <div>
+            <div class="d-flex align-items-center header-img">
+              <div class="d-flex align-items-center nav-toggle">
+                <span onclick="myFunction()">
+                  <img
+                    class="nav-toggle"
+                    width="30px"
+                    height="26px"
+                    src="./images/Admin-monitoring/slide-bar.png"
+                    alt=""
+                  />
+                </span>
+                <h2>MTO</h2>
+              </div>
+              <div
+                class="search d-flex align-items-center justify-content-between"
+              >
+                <input type="text" placeholder="Search" />
+                <div class="icon">
+                  <svg
+                    width="23"
+                    height="24"
+                    viewBox="0 0 23 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.4765 20.4117L18.0838 16.019C17.8855 15.8207 17.6168 15.7106 17.3348 15.7106H16.6166C17.8327 14.1553 18.5552 12.199 18.5552 10.071C18.5552 5.00854 14.4533 0.906616 9.3909 0.906616C4.32849 0.906616 0.226562 5.00854 0.226562 10.071C0.226562 15.1334 4.32849 19.2353 9.3909 19.2353C11.519 19.2353 13.4752 18.5127 15.0305 17.2967V18.0149C15.0305 18.2968 15.1406 18.5656 15.3389 18.7639L19.7316 23.1566C20.1458 23.5707 20.8155 23.5707 21.2252 23.1566L22.4721 21.9097C22.8863 21.4955 22.8863 20.8258 22.4765 20.4117ZM9.3909 15.7106C6.27591 15.7106 3.75131 13.1904 3.75131 10.071C3.75131 6.95596 6.2715 4.43136 9.3909 4.43136C12.5059 4.43136 15.0305 6.95156 15.0305 10.071C15.0305 13.186 12.5103 15.7106 9.3909 15.7106Z"
+                      fill="#334F55"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="profile d-flex align-items-center">
+                <div class="avatar">
+                  <img
+                    height="22px"
+                    width="22px"
+                    src="./images/Admin-monitoring/man.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="
+                    profile-name
+                    d-flex
+                    align-items-center
+                    position-relative
+                  "
+                  onclick="addProfile()"
+                  id="addProfile"
+                >
+                  <p>Dhanashree</p>
+                  <img
+                    height="12px"
+                    width="19px"
+                    src="./images/Admin-monitoring/arrow-key.png"
+                    alt=""
+                  />
+                  <div class="profile-dropdown">
+                    <button>
+                      <svg
+                        width="14"
+                        height="16"
+                        viewBox="0 0 14 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 8C9.20938 8 11 6.20937 11 4C11 1.79063 9.20938 0 7 0C4.79063 0 3 1.79063 3 4C3 6.20937 4.79063 8 7 8ZM9.8 9H9.27812C8.58437 9.31875 7.8125 9.5 7 9.5C6.1875 9.5 5.41875 9.31875 4.72188 9H4.2C1.88125 9 0 10.8813 0 13.2V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V13.2C14 10.8813 12.1187 9 9.8 9Z"
+                          fill="white"
+                        />
+                      </svg>
+
+                      Profile
+                    </button>
+                    <button>
+                      <svg
+                        width="15"
+                        height="17"
+                        viewBox="0 0 15 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.5 17C8.68259 17 9.64185 16.0487 9.64185 14.875H5.35815C5.35815 16.0487 6.31741 17 7.5 17ZM14.7117 12.0292C14.0648 11.3399 12.8544 10.3029 12.8544 6.90625C12.8544 4.32637 11.0303 2.26113 8.57076 1.75445V1.0625C8.57076 0.475801 8.09129 0 7.5 0C6.90871 0 6.42924 0.475801 6.42924 1.0625V1.75445C3.96965 2.26113 2.14555 4.32637 2.14555 6.90625C2.14555 10.3029 0.935177 11.3399 0.288304 12.0292C0.0874113 12.2433 -0.00165095 12.4993 2.31491e-05 12.75C0.00370617 13.2945 0.43462 13.8125 1.0748 13.8125H13.9252C14.5654 13.8125 14.9966 13.2945 15 12.75C15.0017 12.4993 14.9126 12.243 14.7117 12.0292V12.0292Z"
+                          fill="white"
+                        />
+                      </svg>
+
+                      Notifications
+                    </button>
+                    <button>
+                      <svg
+                        width="15"
+                        height="12"
+                        viewBox="0 0 15 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.7924 6.53083L9.79215 11.78C9.3457 12.2486 8.57185 11.9206 8.57185 11.2488V8.24929H4.52403C4.12818 8.24929 3.80971 7.91498 3.80971 7.49942V4.49992C3.80971 4.08436 4.12818 3.75004 4.52403 3.75004H8.57185V0.75054C8.57185 0.0819011 9.34272 -0.249294 9.79215 0.219378L14.7924 5.46851C15.0692 5.76221 15.0692 6.23713 14.7924 6.53083ZM5.71457 11.6237V10.3739C5.71457 10.1677 5.55385 9.999 5.35741 9.999H2.85728C2.33047 9.999 1.90486 9.5522 1.90486 8.99917V3.00017C1.90486 2.44713 2.33047 2.00033 2.85728 2.00033H5.35741C5.55385 2.00033 5.71457 1.83161 5.71457 1.62539V0.375602C5.71457 0.169387 5.55385 0.000664533 5.35741 0.000664533H2.85728C1.27983 0.000664533 0 1.34419 0 3.00017V8.99917C0 10.6551 1.27983 11.9987 2.85728 11.9987H5.35741C5.55385 11.9987 5.71457 11.83 5.71457 11.6237Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Log Out
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btn-group d-flex justify-content-between">
+                <div class="notification-btn">
+                  <img
+                    height="30px"
+                    width="26px"
+                    src="./images/Admin-monitoring/bell.png"
+                    alt=""
+                  />
+                </div>
+                <div class="notification-btn relative" onclick="addPost()">
+                  <img
+                    height="24px"
+                    width="24px"
+                    src="./images/Admin-monitoring/plus.png"
+                    alt=""
+                  />
+                  <div class="post-dropdown" id="postDropdown">
+                    <button>
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.1429 4.71429H7.28571V0.857143C7.28571 0.383839 6.90188 0 6.42857 0H5.57143C5.09813 0 4.71429 0.383839 4.71429 0.857143V4.71429H0.857143C0.383839 4.71429 0 5.09813 0 5.57143V6.42857C0 6.90188 0.383839 7.28571 0.857143 7.28571H4.71429V11.1429C4.71429 11.6162 5.09813 12 5.57143 12H6.42857C6.90188 12 7.28571 11.6162 7.28571 11.1429V7.28571H11.1429C11.6162 7.28571 12 6.90188 12 6.42857V5.57143C12 5.09813 11.6162 4.71429 11.1429 4.71429Z"
+                          fill="white"
+                        />
+                      </svg>
+
+                      Create Microtask
+                    </button>
+                    <button>
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.1429 4.71429H7.28571V0.857143C7.28571 0.383839 6.90188 0 6.42857 0H5.57143C5.09813 0 4.71429 0.383839 4.71429 0.857143V4.71429H0.857143C0.383839 4.71429 0 5.09813 0 5.57143V6.42857C0 6.90188 0.383839 7.28571 0.857143 7.28571H4.71429V11.1429C4.71429 11.6162 5.09813 12 5.57143 12H6.42857C6.90188 12 7.28571 11.6162 7.28571 11.1429V7.28571H11.1429C11.6162 7.28571 12 6.90188 12 6.42857V5.57143C12 5.09813 11.6162 4.71429 11.1429 4.71429Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Create Job Posting
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-------------------- Jobs Ongoing ------------------->
+        <div class="d-flex align-items-center jobs-title">
+          <h1 class="m-0">Your Dashboard</h1>
+
+          <p class="m-0 ms-3 admin"><span>Super Admin</span></p>
+        </div>
+        <div class="welcome-back">
+          <p>Wecome back David</p>
+        </div>
+        <!-- Bars  -->
+        <div class="job-types d-flex">
+          <a href="./user-profile.html" class="job-posted current-job-listing">
+            Jobs Created
+          </a>
+          <a href="./index.html"> View all Admins </a>
+          <a href="./jobs-ongoing.html" class="job-pending"> Jobs Ongoning </a>
+          <a href="./user-profile.html" class="job-progressing">
+            Invite New Admin
+          </a>
+        </div>
+
+        <div class="activity-report-table">
+          <div class="d-flex header-select-main">
+            <div class="header-select me-3">
+              <select
+                class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Select Category</option>
+                <option value="1">Select job</option>
+                <option value="2">Select Invite</option>
+                <option value="3">Select Admin</option>
+              </select>
+            </div>
+            <div class="header-select me-2">
+              <select
+                class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Select Name / Job id</option>
+                <option value="1">Select Title</option>
+                <option value="2">Target Date</option>
+                <option value="3">Select Sample</option>
+              </select>
+            </div>
+          </div>
+          <table
+            style="font-size: 1px; line-height: 0"
+            class="table caption-top"
+          >
+            <thead>
+              <tr class="table-head">
+                <th scope="col">Job Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Target Date</th>
+                <th scope="col">Description</th>
+                <th scope="col">Sample</th>
+                <th scope="col">Instructions</th>
+                <th scope="col">Qty</th>
+                <th scope="col">PR</th>
+                <th scope="col">Skills</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Payment</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="table-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="table-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="table-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="table-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="table-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="table-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="table-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="table-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-------------------- Activity Report Chart ------------------ -->
+    <script>
+      function myFunction2() {
+        var y = document.getElementById('#fullcontent');
+        if (y.className === 'admin-page-wrapper') {
+          y.className += ' admin-full-content';
+        } else {
+          y.className = 'admin-page-wrapper';
+        }
+      }
+      function myFunction() {
+        var x = document.getElementById('myTopnav');
+        var y = document.getElementById('#fullcontent');
+        myFunction2();
+        if (x.className === 'nav sidebar topnav') {
+          x.className += ' responsive';
+        } else {
+          x.className = 'nav sidebar topnav';
+        }
+      }
+      function addPost() {
+        var x = document.getElementById('postDropdown');
+        if (x.className === 'post-dropdown') {
+          x.className += ' post-dropdown-toggle';
+        } else {
+          x.className = 'post-dropdown';
+        }
+      }
+      function addProfile() {
+        var x = document.getElementById('addProfile');
+        if (
+          x.className ===
+          'profile-name d-flex align-items-center position-relative'
+        ) {
+          x.className += ' profile-dropdown-toggle';
+        } else {
+          x.className =
+            'profile-name d-flex align-items-center position-relative';
+        }
+      }
+    </script>
+  </body>
+</html>
