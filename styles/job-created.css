@@ -299,7 +299,7 @@ input:focus {
 
 .activity-report-table {
   background: #ffffff;
-  border-radius: 15px;
+      border-radius: 15px 15px 0 0;
   padding: 0 18px;
   margin: 25px 0px 0 0px;
   max-width: 1150px;
@@ -391,17 +391,17 @@ color: #334F55;
   font-weight: 500;
   font-size: 14px;
   margin: 6px;
-  line-height: 48px;
+  line-height: 38px;
   color: #334f55;
 }
 .table-head {
   font-style: normal;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 19px;
+font-weight: 800;
+font-size: 20px;
+line-height: 45px;
 
-  color: #525ded;
-  padding: 13px 32px;
+color: #525DED;
+  padding: 20px 32px 30px;
 }
 .table-head th {
   border: 0 !important;
@@ -554,4 +554,19 @@ hr{
 .card-mtos .card-content img{
    margin-top: 4px;
 
+}
+
+/* table  */
+.table-price {
+  position: relative;
+}
+.table-price:after {
+    position: absolute;
+    content: "";
+    bottom: 14px;
+    left: 123px;
+    right: 0;
+    width: 40px;
+    height: 2px;
+    background: #ffa500;
 }
