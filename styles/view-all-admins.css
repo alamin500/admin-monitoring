@@ -324,25 +324,31 @@ input:focus {
 .table-text {
   height: 52px;
 }
-.table-text .blue-data {
+.table-text .blue-data button{
   background: #525ded;
-  width: 71px;
-  height: 28px;
-  font-size: 12px;
+ width: 71px !important;
+  font-weight: 800 !important;
+  border: 0;
+  height: 28px !important;
+  font-size: 12px !important;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  margin: 16px auto 0;
+  margin: 20px auto 0 !important;
+  color: #ffffff;
 }
-.table-text .delete-data {
+.table-text .delete-data  button{
   background: #CFD0DC;
-  width: 71px;
-  height: 28px;
-  font-size: 12px;
+  width: 71px !important;
+  font-weight: 800 !important;
+  border: 0;
+  height: 28px !important;
+  font-size: 12px !important;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  margin: 16px auto 0;
+  margin: 20px auto 0 !important;
+  color: #ffffff;
 }
 .table-text .active-data {
   background: rgba(36, 255, 0, 0.25);
@@ -352,7 +358,7 @@ input:focus {
   border-radius: 30px;
   align-items: center;
   justify-content: center;
-  margin: 16px auto 0;
+  margin: 20px auto 0;
 
 }
 .table-text .inactive-data {
@@ -363,7 +369,7 @@ input:focus {
   border-radius: 30px;
   align-items: center;
   justify-content: center;
-  margin: 16px auto 0;
+  margin: 20px auto 0;
 
 }
 .table-text .active-data p {
@@ -378,24 +384,12 @@ font-weight: 800;
 font-size: 12px;
 color: #334F55;
 }
-.table-text .blue-data p {
-  margin: 0 5px 0 0;
-  font-weight: 800;
-  font-size: 12px;
-  color: #ffffff;
-}
-.table-text .delete-data p {
-  margin: 0 5px 0 0;
-  font-weight: 800;
-  font-size: 12px;
-  color: #ffffff;
-}
 .table-text td {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   margin: 6px;
-  line-height: 40px;
+  line-height: 48px;
   color: #334f55;
 }
 .table-head {
