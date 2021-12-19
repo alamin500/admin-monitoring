@@ -79,7 +79,7 @@ height: 314px;
   font-weight: 500;
   font-size: 14px;
   margin: 6px;
-  line-height: 38px;
+  line-height: 43px;
   color: #334f55;
 }
 .table-head {
@@ -93,7 +93,7 @@ color: #525DED;
 }
 .table-head th {
   border: 0 !important;
-  padding: 13px 5px !important;
+  padding: 17px 5px 0!important;
 }
 .table-text td{
   border-width: 1px 0 0;
@@ -190,11 +190,11 @@ line-height: 27px;
 color: #334F55;
 }
 .active::after{
-    Content: '';
+       Content: '';
     position: absolute;
     height: 3px;
-    width: 64px;
-    top: 44px;
+    width: 56px;
+    top: 43px;
     background-color: #FFA500;
-    left: 44px;
+    left: 47px;
 }
