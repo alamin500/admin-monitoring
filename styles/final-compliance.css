@@ -1,0 +1,200 @@
+.job-section{
+ width: 834px;
+height: 212px;
+border-radius: 15px;
+background: #FFFFFF;
+    padding: 40px 85px 40px 60px;
+}
+.job-section .job-title h6{
+ font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+
+color: #334F55;
+}
+.job-section .job-title span{
+ color: #525DED;
+}
+body{
+ background: #F5F5F5 !important;
+ padding: 50px;
+}
+ .blue-data {
+  background: #525ded;
+  width: 102px;
+  height: 28px;
+  font-size: 12px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+
+}
+.blue-data p {
+  font-weight: 600;
+  font-size: 12px;
+      margin: 4px 10px 6px 0;
+  color: #ffffff;
+}
+.job-title{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+/* Table  */
+.activity-report-table {
+  background: #ffffff;
+      border-radius: 0px 15px 15px 15px;
+  padding: 0 18px;
+  margin: 0px 0px 0 0px;
+  width: 836px;
+height: 314px;
+    margin-top: -1px;
+}
+.select-bar {
+  padding: 0 !important;
+}
+.activity-report {
+  width: 378px;
+  position: relative;
+}
+.admin-full-content .activity-report {
+  width: 500px;
+}
+.admin-full-content canvas {
+  height: 238px !important;
+}
+.admin-full-content .inprogress canvas {
+  height: 180px !important;
+}
+.table-text {
+  height: 52px;
+}
+
+
+.table-text td {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 6px;
+  line-height: 38px;
+  color: #334f55;
+}
+.table-head {
+  font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 45px;
+
+color: #525DED;
+  padding: 20px 32px 30px;
+}
+.table-head th {
+  border: 0 !important;
+  padding: 13px 5px !important;
+}
+.table-text td{
+  border-width: 1px 0 0;
+}
+.activity-report-table table tbody tr {
+  position: relative;
+}
+
+.caption-top {
+  caption-side: top;
+  text-align: center;
+}
+
+.jobs-title {
+     margin-top: 31px;
+}
+.jobs-title h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: #334f55;
+}
+.jobs-title span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+     padding: 4px 9px;
+     white-space: pre;
+
+  color: #ffffff;
+  background: #ffa500;
+  border-radius: 100px;
+}
+
+
+/* Tabs */
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #F5F5F5;
+      width: 836px;
+      margin-top: 19px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 15px 15px 0px 0px;
+  margin-right: 1px;
+  width: 151px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+/* ------------------ */
+.tablinks{
+ padding-bottom: 10px !important;
+ position: relative;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+color: #ADADAD;
+}
+.active{
+ font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+
+color: #334F55;
+}
+.active::after{
+    Content: '';
+    position: absolute;
+    height: 3px;
+    width: 64px;
+    top: 44px;
+    background-color: #FFA500;
+    left: 44px;
+}
