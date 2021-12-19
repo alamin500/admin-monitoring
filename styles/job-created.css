@@ -48,7 +48,7 @@ h2 {
   margin-bottom: 69px;
 }
 .sidebar ul li {
-  padding: 23px 0px 24px 39px;
+  padding: 14px 0px 14px 39px;
   font-weight: bold;
   font-size: 14px;
   line-height: 19px;
@@ -77,8 +77,11 @@ h2 {
 .sidebar ul li:hover svg path {
   fill: #525ded;
 }
-.sidebar ul .active {
+.sidebar ul .active li{
   background-color: #f5f5f5;
+}
+.active{
+  text-decoration: none;
 }
 .sidebar ul .active svg path {
   fill: #525ded;
@@ -522,12 +525,40 @@ line-height: 49px;
 
 color: #334F55;
 }
+.total-amount h4{
+margin: 5px 0;
+font-weight: bold;
+font-size: 36px;
+line-height: 49px;
+
+color: #334F55;
+}
 .jobs-card p{
 font-weight: bold;
 font-size: 18px;
 line-height: 25px;
 white-space: pre;
 color: #ADADAD;
+}
+.total-amount{
+  margin: 20px 0 0 12px;
+  padding-top: 20px;
+}
+.total-amount p{
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+white-space: pre;
+color: #ADADAD;
+margin: 0;
+}
+.total-amount h5{
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+white-space: pre;
+color: #FFA500;
+margin: 0;
 }
 hr{
  border: 1px solid #ADADAD;
