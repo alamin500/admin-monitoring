@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style  -->
+    <link
+      href="/your-path-to-fontawesome/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/create-admin.css" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <!-- bootstrap script  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Chart Script Link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+
+  <body>
+    <main class="page-container">
+
+
+      <section class="admin-page-wrapper" id="#fullcontent">
+
+
+        <!-------------------- Your Dashboard ------------------->
+        <div>
+          <div class="d-flex back-arrow">
+
+            <img class="arrow" width="8px" height="16px" src="./images/create-admin/left-arrow.png" alt="" />
+            <img class="line" height="3px" width="16px" src="./images/create-admin/Vector (2).png" alt="">
+            <p>Back</p>
+          </div>
+        </div>
+        <div class="create-admin-section">
+          <h5>Create Admin</h5>
+          <div class="input-content">
+            <p>Name</p>
+            <input class="form-control" type="text" placeholder="Type here" />
+          </div>
+          <div class="input-content">
+            <p>Job ID</p>
+            <input class="form-control" type="text" placeholder="Type here" />
+          </div>
+
+          <div class="input-content">
+            <p>Department</p>
+            <input class="form-control" type="text" placeholder="Type here" />
+          </div>
+          <div class="input-content">
+            <p>Contract Number</p>
+            <input class="form-control" type="text" placeholder="Type here" />
+          </div>
+          <div class="input-content">
+            <p>New Password</p>
+            <input class="form-control" type="text" placeholder="Type here" />
+          </div>
+              <div class="input-content">
+            <p>Re-Enter Password</p>
+            <input class="form-control" type="text" placeholder="Type here" />
+          </div>
+          <input class="btn create-button form-control" type="submit" value="Submit">
+          <h6>or</h6>
+          <input class="btn already-button form-control" type="submit" value="Submit">
+        </div>
+      </section>
+    </main>
+
+    <!-------------------- Script ------------------ -->
+    <script>
+      function myFunction2() {
+        var y = document.getElementById('#fullcontent');
+        if (y.className === 'admin-page-wrapper') {
+          y.className += ' admin-full-content';
+        } else {
+          y.className = 'admin-page-wrapper';
+        }
+      }
+      function myFunction() {
+        var x = document.getElementById('myTopnav');
+        var y = document.getElementById('#fullcontent');
+        myFunction2();
+        if (x.className === 'nav sidebar topnav') {
+          x.className += ' responsive';
+        } else {
+          x.className = 'nav sidebar topnav';
+        }
+      }
+      function addPost() {
+        var x = document.getElementById('postDropdown');
+        if (x.className === 'post-dropdown') {
+          x.className += ' post-dropdown-toggle';
+        } else {
+          x.className = 'post-dropdown';
+        }
+      }
+      function addProfile() {
+        var x = document.getElementById('addProfile');
+        if (
+          x.className ===
+          'profile-name d-flex align-items-center position-relative'
+        ) {
+          x.className += ' profile-dropdown-toggle';
+        } else {
+          x.className =
+            'profile-name d-flex align-items-center position-relative';
+        }
+      }
+    </script>
+  </body>
+</html>

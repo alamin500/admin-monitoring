@@ -1,0 +1,103 @@
+
+
+/* Create Admin Section  */
+.admin-page-wrapper{
+  width: 1440px;
+    margin: 0 auto;
+}
+.create-admin-section{
+  width: 630px;
+  height: 1002px;
+  padding: 17px 51px 58px 40px;
+background: #FFFFFF;
+border: 1px solid #ADADAD;
+box-sizing: border-box;
+border-radius: 10px;
+}
+.create-admin-section h5{
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 35px;
+margin-bottom: 45px;
+color: #525DED;
+}
+.create-admin-section h6{
+text-align: center;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+
+color: #D2D2D2;
+}
+.input-content p{
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+    margin-bottom: 5px;
+color: #334F55;
+}
+.input-content input{
+    background: #F5F5F5;
+    border-radius: 5px;
+    border: none;
+    width: 539px;
+    height: 43px;
+    margin-bottom: 38px;
+
+    font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+
+color: #ADADAD;
+}
+.create-button{
+  background: #525DED !important;
+  height: 59px;
+  margin: 26px 0 24px;
+  font-style: normal;
+font-weight: bold !important;
+font-size: 24px !important;
+line-height: 28px;
+
+color: #FFFFFF !important;
+}
+.already-button{
+  background: #FFFFFF;
+border: 1px solid #ADADAD !important;
+box-sizing: border-box;
+border-radius: 10px;
+height: 59px;
+margin-top: 20px;
+font-style: normal;
+font-weight: bold !important;
+font-size: 24px !important;
+line-height: 28px;
+text-align: center;
+
+color: #D2D2D2 !important;
+}
+.back-arrow {
+align-items: center;
+
+}
+.back-arrow .arrow{
+align-items: center;
+margin: 12px -6px 19px 12px;
+}
+.back-arrow .line{
+    margin: -6px 9px 0px 0px;
+}
+.back-arrow p{
+  font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 30px;
+
+color: #525DED;
+
+}
