@@ -330,7 +330,27 @@
           <a href="#" class="job-progressing"> Invite New Admin </a>
         </div>
 
-        <!---------- First 4 Cards ------- -->
+
+
+              <!-- Tabs -->
+      <div class="tab">
+        <button class="tablinks active" onclick="openCity(event, 'jobs-created')">
+          Jobs Created
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'view-all')">
+          View all Admins
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'jobs-ongoing')">
+          Jobs Ongoing
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'invite-new')">
+          Invite New Admin
+        </button>
+      </div>
+
+      <div id="jobs-created" class="tabcontent" style="display: block;">
+        <!-- Jobs Created -->
+            <!---------- First 4 Cards ------- -->
         <div class="d-flex">
           <!-- Card 1 -->
           <div class="jobs-card">
@@ -465,6 +485,875 @@
             </tbody>
           </table>
         </div>
+
+      </div>
+
+      <div id="view-all" class="tabcontent">
+        <!-- View All Admind -->
+     <!---------- Table ------- -->
+        <div class="activity-report-table">
+          <table
+            style="font-size: 1px; line-height: 0"
+            class="table caption-top"
+          >
+            <thead>
+              <tr class="table-head">
+                <th scope="col">Profile</th>
+                <th scope="col">Name</th>
+                <th scope="col">Mobile</th>
+                <th scope="col">Email</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-font">
+                <td>
+                  <div class="table-img">
+                    <img
+                      src="./images/View-all-admins/avatar_male 1.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>Jullian London</td>
+                <td>+33 9 345 45 345</td>
+                <td>reshma_lee@gmail.com</td>
+                <td class="p-0">
+                  <div class="active-data d-flex">
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <button type="button" class="btn">View</button>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="delete-data d-flex">
+                    <button type="button" class="btn btn-primary">
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-font">
+                <td>
+                  <div class="table-img">
+                    <img
+                      src="./images/View-all-admins/avatar_female 1.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>Jullian London</td>
+                <td>+33 9 345 45 345</td>
+                <td>reshma_lee@gmail.com</td>
+                <td class="p-0">
+                  <div class="active-data d-flex">
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <button type="button" class="btn">View</button>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="delete-data d-flex">
+                    <button type="button" class="btn btn-primary">
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-font">
+                <td>
+                  <div class="table-img">
+                    <img
+                      src="./images/View-all-admins/avatar_male 1.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>Jullian London</td>
+                <td>+33 9 345 45 345</td>
+                <td>reshma_lee@gmail.com</td>
+                <td class="p-0">
+                  <div class="inactive-data d-flex">
+                    <p>Inactive</p>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <button type="button" class="btn">View</button>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="delete-data d-flex">
+                    <button type="button" class="btn btn-primary">
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-font">
+                <td>
+                  <div class="table-img">
+                    <img
+                      src="./images/View-all-admins/avatar_female 1.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>Jullian London</td>
+                <td>+33 9 345 45 345</td>
+                <td>reshma_lee@gmail.com</td>
+                <td class="p-0">
+                  <div class="active-data d-flex">
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <button type="button" class="btn">View</button>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="delete-data d-flex">
+                    <button type="button" class="btn btn-primary">
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-font">
+                <td>
+                  <div class="table-img">
+                    <img
+                      src="./images/View-all-admins/avatar_male 1.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>Jullian London</td>
+                <td>+33 9 345 45 345</td>
+                <td>reshma_lee@gmail.com</td>
+                <td class="p-0">
+                  <div class="active-data d-flex">
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <button type="button" class="btn">View</button>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="delete-data d-flex">
+                    <button type="button" class="btn btn-primary">
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-font">
+                <td>
+                  <div class="table-img">
+                    <img
+                      src="./images/View-all-admins/avatar_female 1.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>Jullian London</td>
+                <td>+33 9 345 45 345</td>
+                <td>reshma_lee@gmail.com</td>
+                <td class="p-0">
+                  <div class="inactive-data d-flex">
+                    <p>Inactive</p>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <button type="button" class="btn">View</button>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="delete-data d-flex">
+                    <button type="button" class="btn btn-primary">
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-font">
+                <td>
+                  <div class="table-img">
+                    <img
+                      src="./images/View-all-admins/avatar_male 1.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>Jullian London</td>
+                <td>+33 9 345 45 345</td>
+                <td>reshma_lee@gmail.com</td>
+                <td class="p-0">
+                  <div class="active-data d-flex">
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <button type="button" class="btn">View</button>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="delete-data d-flex">
+                    <button type="button" class="btn btn-primary">
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-font">
+                <td>
+                  <div class="table-img">
+                    <img
+                      src="./images/View-all-admins/avatar_female 1.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>Jullian London</td>
+                <td>+33 9 345 45 345</td>
+                <td>reshma_lee@gmail.com</td>
+                <td class="p-0">
+                  <div class="active-data d-flex">
+                    <p>Active</p>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <button type="button" class="btn">View</button>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="delete-data d-flex">
+                    <button type="button" class="btn">Delete</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="jobs-ongoing" class="tabcontent">
+        <!----------------- Jobs Ongoing----------------- -->
+     <!-----------------Header Select -------------- -->
+        <div class="ongoing-report-table">
+          <div class="d-flex header-select-main">
+            <div class="header-select me-3">
+              <select
+                class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Select Category</option>
+                <option value="1">Select job</option>
+                <option value="2">Select Invite</option>
+                <option value="3">Select Admin</option>
+              </select>
+            </div>
+            <div class="header-select me-2">
+              <select
+                class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Select Name / Job id</option>
+                <option value="1">Select Title</option>
+                <option value="2">Target Date</option>
+                <option value="3">Select Sample</option>
+              </select>
+            </div>
+          </div>
+
+          <!------------------- Table --------------- -->
+          <table
+            style="font-size: 1px; line-height: 0"
+            class="table caption-top"
+          >
+            <thead>
+              <tr class="ongoing-head">
+                <th scope="col">Job Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Target Date</th>
+                <th scope="col">Description</th>
+                <th scope="col">Sample</th>
+                <th scope="col">Instructions</th>
+                <th scope="col">Qty</th>
+                <th scope="col">PR</th>
+                <th scope="col">Skills</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Payment</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="ongoing-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="ongoing-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="ongoing-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="ongoing-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="ongoing-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="ongoing-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="ongoing-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="ongoing-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="ongoing-text">
+                <td>12RQ..</td>
+                <td>Conten...</td>
+                <td>Data Ent...</td>
+                <td>Type Date...</td>
+                <td>26.07.2021</td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="blue-data d-flex">
+                    <p>Data_en..</p>
+                    <img
+                      height="13px"
+                      width="9px"
+                      src="/images/Job-Ongoing/pdf.png"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td>3</td>
+                <td>1</td>
+                <td>Writi...</td>
+                <td>5</td>
+                <td class="select-bar">
+                  <div>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected>Initiated</option>
+                      <option value="1">Pending</option>
+                      <option value="2">Processing</option>
+                      <option value="3">Completed</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="select-bar">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>In Progress</option>
+                    <option value="1">Ongoing</option>
+                    <option value="2">Shipping</option>
+                    <option value="3">Done</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      <div id="invite-new" class="tabcontent">
+        <!-- Invite New Admin -->
+        <div class="activity-report-table">
+          <table
+            style="font-size: 1px; line-height: 0"
+            class="table caption-top"
+          >
+            <thead>
+              <tr class="table-head">
+                <th scope="col">S.No</th>
+                <th scope="col">word</th>
+                <th scope="col">Complian</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-text">
+                <td>1</td>
+                <td>Abe</td>
+                <td>18</td>
+              </tr>
+              <tr class="table-text">
+                <td>2</td>
+                <td>Bcd</td>
+                <td>19</td>
+              </tr>
+              <tr class="table-text">
+                <td>3</td>
+                <td>Cde</td>
+                <td>17</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
       </section>
     </main>
 
@@ -509,5 +1398,22 @@
         }
       }
     </script>
+
+    <!-- Tab  -->
+        <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
   </body>
 </html>
