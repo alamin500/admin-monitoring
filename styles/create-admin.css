@@ -6,6 +6,9 @@
     margin: 0 auto;
 }
 .create-admin-section{
+      margin: 0 auto;
+}
+.create-admin-section{
   width: 630px;
   height: 1002px;
   padding: 17px 51px 58px 40px;
@@ -37,7 +40,7 @@ font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 19px;
-    margin-bottom: 5px;
+    margin: 0 0 5px 2px;
 color: #334F55;
 }
 .input-content input{
@@ -83,14 +86,15 @@ color: #D2D2D2 !important;
 }
 .back-arrow {
 align-items: center;
-
+justify-content: center;
+margin: 44px 546px 7px 0;
 }
 .back-arrow .arrow{
 align-items: center;
 margin: 12px -6px 19px 12px;
 }
 .back-arrow .line{
-    margin: -6px 9px 0px 0px;
+  margin: -6px 6px 0px 0px;
 }
 .back-arrow p{
   font-style: normal;
@@ -99,5 +103,18 @@ font-size: 26px;
 line-height: 30px;
 
 color: #525DED;
-
+}
+.varal-logo{
+  margin: 23px 0 0 46px;
+}
+footer {
+  text-align: center;
+  margin: 85px 0 111px;
+}
+footer p{
+  font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+color: #ADADAD;
 }
