@@ -635,8 +635,21 @@ hr{
 
 }
 .card-mtos h3 {
-    margin: 13px 0 2px;
+  margin: 13px 0 2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
 
+  color: #334f55;
+}
+.card-mtos p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #adadad;
 }
 .card-mtos .card-content {
    align-items: normal;
