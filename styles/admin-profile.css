@@ -481,6 +481,9 @@ color: #ADADAD !important;
   justify-content: center;
   margin: 16px auto 0;
 }
+.ongoing-text .blue-data a{
+ margin: 0 auto !important;
+}
 .ongoing-text .blue-data p {
   margin: 0 5px 0 0;
   font-weight: 600;
