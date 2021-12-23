@@ -335,6 +335,7 @@ color: #334F55;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+  letter-spacing: .5px;
     margin: 0;
   color: #334f55;
 }
@@ -421,6 +422,18 @@ h6 {
   padding: 7px;
   margin: 8px 0 0 0;
 }
+.right-profile h4 {
+  font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+color: #334F55;
+  background: #f5f5f5;
+  border-radius: 2px;
+  width: 125px;
+  height: 30px;
+  padding: 7px;
+  margin: 8px 0 0 0;
+}
 .update-name {
   border-top: 1px solid #f5f5f5;
 }
@@ -437,8 +450,11 @@ h6 {
   margin: 0px 45px 0 51px;
 }
 .upload{
-    text-decoration-line: underline;
-color: #ADADAD !important;
+   border-radius: 10px !important;
+background: #C4FFB5 !important;
+width: 65px !important;
+height: 30px !important;
+padding-left: 17px !important;
 }
 
 
@@ -481,9 +497,7 @@ color: #ADADAD !important;
   justify-content: center;
   margin: 16px auto 0;
 }
-.ongoing-text .blue-data a{
- margin: 0 auto !important;
-}
+
 .ongoing-text .blue-data p {
   margin: 0 5px 0 0;
   font-weight: 600;
@@ -602,6 +616,7 @@ color: #334F55;
   font-weight: bold;
 font-size: 14px;
 line-height: 19px;
+ margin: 4px 0 17px 0 !important;
 
 color: #ADADAD;
 }

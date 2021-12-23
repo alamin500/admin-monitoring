@@ -807,3 +807,6 @@ hr{
   text-align: center;
 }
 /* ----------table end---------- */
+.blue-data a{
+ margin: 0 auto !important;
+}
